@@ -1,0 +1,23 @@
+<div class ="container">
+  <div class="row justify-content-center">
+  <h1 class="text-center">Answer Page</h1>
+    <div class="col-3">
+
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">You</div>
+        <div class="card-body text-primary">
+        <p class="card-text"><%= @answers %></p>
+        </div>
+      </div>
+
+      <div class="card border-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">Coach</div>
+        <div class="card-body text-warning">
+          <p class="card-text"><%= @coach_answers %></p>
+        </div>
+      </div>
+
+      <%= link_to "Ask a new question", ask_path %>
+    </div>
+  </div>
+</div>
